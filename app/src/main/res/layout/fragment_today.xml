@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".ui.homeFragment.HomeFragment" >
+
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textNameCity"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TableLayout
+        android:id="@+id/todayWeatherTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62">
+
+        <TableRow
+            android:id="@+id/tablePic1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imageViewTerm"
+                android:layout_width="88dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/tempPic"
+                android:gravity="center"
+                app:srcCompat="@drawable/thermometer" />
+
+            <ImageView
+                android:id="@+id/imageViewWind"
+                android:layout_width="88dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/windPic"
+                android:gravity="center"
+                app:srcCompat="@drawable/wind" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textViewTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tempToDay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorLink="#170C0C"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/windToDay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorLink="#170C0C"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablePic2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imageViewHumidity"
+                android:layout_width="88dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/humidityPic"
+                android:gravity="center"
+                app:srcCompat="@drawable/humidity" />
+
+            <ImageView
+                android:id="@+id/imageViewBarometer"
+                android:layout_width="88dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/windSpeedPic"
+                android:gravity="center"
+                app:srcCompat="@drawable/barometer" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableText2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textViewHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/himidityToDay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorLink="#170C0C"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textViewBarometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pressToDay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColorLink="#170C0C"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/storm_rain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:contentDescription="@string/storm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
