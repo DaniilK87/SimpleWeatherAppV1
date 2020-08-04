@@ -20,7 +20,7 @@
             android:textColor="#0E0101"
             android:textSize="24sp" />
 
-        <!--При замене данных кнопок ошибка-->
+        <!--При замене данных кнопок следующая ошибка-->
         <!--android.view.InflateException: Binary XML file line #24: Error inflating class com.google.android.material.button.MaterialButton-->
         <!--<com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDialogYes"

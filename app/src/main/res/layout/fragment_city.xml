@@ -7,6 +7,8 @@
     android:background="@drawable/blue"
     tools:context=".ui.cityFragment.CityFragment">
 
+
+    <!--test-->
     <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="match_parent"

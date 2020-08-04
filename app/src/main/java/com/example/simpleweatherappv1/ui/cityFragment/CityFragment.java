@@ -16,6 +16,7 @@ import com.example.simpleweatherappv1.R;
 
 public class CityFragment extends Fragment {
 
+    //
     private CityViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
