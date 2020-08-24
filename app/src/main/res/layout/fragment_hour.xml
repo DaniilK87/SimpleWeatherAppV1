@@ -7,7 +7,7 @@
     android:background="@drawable/blue"
     tools:context=".ui.hourFragment.HourFragment">
 
-    <!--test-->
+
     <FrameLayout
         android:layout_width="391dp"
         android:layout_height="302dp"

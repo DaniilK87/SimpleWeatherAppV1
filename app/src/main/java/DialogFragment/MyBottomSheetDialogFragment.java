@@ -1,4 +1,4 @@
-package dialogFragment;
+package DialogFragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class MyBottomSheetDialogFragment extends BottomSheetDialogFragment {
 
-   //
+
     public static MyBottomSheetDialogFragment newInstance() {
         return new MyBottomSheetDialogFragment();
     }

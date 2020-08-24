@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 public class CityViewModel extends ViewModel {
 
-    //
+
     private MutableLiveData<String> mText;
 
     public CityViewModel() {

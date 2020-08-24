@@ -16,7 +16,7 @@ import com.example.simpleweatherappv1.R;
 
 public class HourFragment extends Fragment {
 
-    //
+
     private HourViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
