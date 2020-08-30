@@ -48,12 +48,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/inputCity"
-            android:textAlignment="viewStart"
-            android:textColor="#0B0A0A"
-            android:textColorHint="@android:color/black"
-            android:textColorLink="#040303"
-            android:textSize="24sp" />
+            android:hint="@string/cityInputEditText"
+            android:inputType="text"
+            android:textColorHighlight="#0B0000"
+            android:textColorHint="#030007"
+            android:textColorLink="#100101"
+            android:textCursorDrawable="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

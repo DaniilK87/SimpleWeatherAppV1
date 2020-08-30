@@ -40,4 +40,5 @@
     <string name="stringButtonDialogNo">Нет</string>
     <string name="buttonDialogYes">Да</string>
     <string name="buttomDialogNo">Нет</string>
+    <string name="cityInputEditText">Город</string>
 </resources>
