@@ -8,52 +8,43 @@
     tools:context=".ui.cityFragment.CityFragment">
 
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchCity"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:hint="@string/cityInputEditText"
+        android:inputType="text"
+        android:textColorHighlight="#0B0000"
+        android:textColorHint="#030007"
+        android:textColorLink="#100101"
+        android:textCursorDrawable="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.16000003" />
 
-    <ImageButton
-        android:id="@+id/imageButtonClick"
+    <Button
+        android:id="@+id/buttonSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/blue"
-        android:src="@drawable/click_button"
+        android:text="@string/seartchCityButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/Click" />
+        app:layout_constraintVertical_bias="0.282" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="365dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonClick"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="383dp"
+        android:layout_height="417dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/cityInputEditText"
-            android:inputType="text"
-            android:textColorHighlight="#0B0000"
-            android:textColorHint="#030007"
-            android:textColorLink="#100101"
-            android:textCursorDrawable="@android:color/black" />
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintVertical_bias="0.86" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
